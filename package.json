@@ -1,7 +1,21 @@
 {
+    "name": "vueblog",
+    "description": "blog by vuepress",
+    "version": "1.0.0",
+    "author": "cyy <cyy0418@qq.com>",
     "scripts": {
         "dev": "vuepress dev docs",
         "build": "vuepress build docs",
         "bd": "vuepress build docs && gh-pages -d dist"
+    },
+    "repository": "git@github.com:cyyjs/vueblog.git",
+    "license": "MIT",
+    "engines": {
+        "node": ">=8.0.0"
+    },
+    "readmeFilename": "README.md",
+    "devDependencies": {
+        "node-sass": "^4.9.0",
+        "sass-loader": "^7.0.1"
     }
 }
