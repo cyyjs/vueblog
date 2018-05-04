@@ -3,6 +3,7 @@ category: 技术
 title: css 编写提示框
 date: 2018-05-03 14:47:01
 tags: ["CSS"]
+description: css文字提示样式
 ---
 
 ## 提示框
@@ -16,6 +17,8 @@ tags: ["CSS"]
 ```html
 <a class="tooltip" data-title="提示文字">提示</a>
 ```
+
+<!-- more -->
 
 ### 样式
 

@@ -67,7 +67,12 @@ export default {
                 this.$route,
                 this.$site,
                 this.$localePath
-            )
+            ).sort((a, b) => {
+                let at = (a.frontmatter && a.frontmatter.date) || 0
+                let bt = (b.frontmatter && b.frontmatter.date) || 0
+
+                return at > bt ? -1 : 1
+            })
         },
         pageClasses() {
             const userPageClass = this.$page.frontmatter.pageClass

@@ -3,6 +3,7 @@ category: 技术
 title: GitHub webhooks实现自动部署
 date: 2017-09-27 11:33:39
 tags: [Git,webhooks]
+banner: https://ws2.sinaimg.cn/large/006tNbRwgy1fgagteiy5ej31ji120dmi.jpg
 ---
 
 > 使用第三方 Git 仓库，实现代码的自动部署

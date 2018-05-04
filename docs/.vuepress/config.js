@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const blogs = getFileList('blog')
+const blogs = getFileList('blog/post', true)
 function getFileList(name, isMd) {
     let folders = fs.readdirSync(path.join(__dirname, '../' + name))
     if (isMd) {
@@ -32,12 +32,26 @@ module.exports = {
             {
                 text: 'Blog',
                 link: '/blog/',
-                items: blogs.map(b => {
-                    return {
-                        text: b,
-                        link: `/blog/${b}/${getFileList(`blog/${b}`, 1)[0]}`
+                items: [
+                    {
+                        text: '列表',
+                        link: '/blog/links'
+                    },
+                    {
+                        text: '标签',
+                        link: '/blog/tags'
+                    },
+                    {
+                        text: '归档',
+                        link: '/blog/archives'
                     }
-                })
+                ]
+                // blogs.map(b => {
+                //     return {
+                //         text: b,
+                //         link: `/blog/${b}/${getFileList(`blog/${b}`, 1)[0]}`
+                //     }
+                // })
             },
             {
                 text: 'Live',
@@ -62,14 +76,8 @@ module.exports = {
                 link: 'https://github.com/cyyjs'
             }
         ],
-        sidebar: {
-            '/blog/': blogs.map(b => {
-                return {
-                    title: b,
-                    // collapsable: true,
-                    children: getFileList(`blog/${b}`, 1).map(f => `${b}/${f}`)
-                }
-            })
-        }
+        sidebar: blogs.map(b => {
+            return `blog/post/${b}`
+        })
     }
 }

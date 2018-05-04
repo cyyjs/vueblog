@@ -3,6 +3,8 @@ category: 默认分类
 title: 前端mac系统重装之后
 date: 2017-10-17 18:20:50
 tags: [" 工具"]
+discription: 最近刚更新了 macOS High Sierra，更新过程非常坎坷，最后终于安装成功了，但是曾经装的软件什么的都没有了，需要重新安装，这里列出我所安装的软件列表
+banner: https://ws1.sinaimg.cn/large/006tNc79ly1fke3s9cr5qj30c00aa755.jpg
 ---
 
 ![](https://ws1.sinaimg.cn/large/006tNc79ly1fke3s9cr5qj30c00aa755.jpg)

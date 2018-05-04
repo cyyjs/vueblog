@@ -27,16 +27,8 @@ export default {
     computed: {
         list() {
             return this.item.children.sort((a, b) => {
-                let at =
-                    (a.frontmatter &&
-                        a.frontmatter.date &&
-                        new Date(a.frontmatter.date)) ||
-                    0
-                let bt =
-                    (b.frontmatter &&
-                        b.frontmatter.date &&
-                        new Date(b.frontmatter.date)) ||
-                    0
+                let at = (a.frontmatter && a.frontmatter.date) || 0
+                let bt = (b.frontmatter && b.frontmatter.date) || 0
 
                 return at > bt ? -1 : 1
             })

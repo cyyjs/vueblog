@@ -3,6 +3,7 @@ category: 技术
 title: Dockerfile格式
 date: 2018-03-22 15:51:42
 tags: ["Docker"]
+banner: http://ow5l7f56h.bkt.clouddn.com/d71fa830-2da5-11e8-908e-8d20789a9043
 ---
 
 ![图片](http://ow5l7f56h.bkt.clouddn.com/d71fa830-2da5-11e8-908e-8d20789a9043)

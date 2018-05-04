@@ -3,6 +3,7 @@ category: 技术
 title: (二)ReactNative图标、app名称及启动页设置
 date: 2017-12-18 10:39:35
 tags: ["React Native"]
+banner: https://ws3.sinaimg.cn/large/006tNc79ly1fmkp7lm117j30gg0ou769.jpg
 ---
 
 ## 修改 App 图标
@@ -19,6 +20,8 @@ tags: ["React Native"]
     <string name="app_name">名称</string>
 </resources>
 ```
+
+<!--more-->
 
 ## 设置启动页
 

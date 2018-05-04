@@ -3,11 +3,14 @@ category: 技术
 title: Weex 项目 Android部署
 date: 2017-10-16 17:52:41
 tags: ["weex"]
+banner: https://ws3.sinaimg.cn/large/006tNc79ly1fkk7wozlbqj31jq11aalh.jpg
 ---
 
 ## 环境要求
 
 1、安装 [Android Studio](https://developer.android.com/studio/install.html)或者 [Android SDK](https://developer.android.com/studio/releases/sdk-tools.html)
+
+<!--more-->
 
 2、 安装 `Android SDK Build-Tools 23.0.2`版本
 

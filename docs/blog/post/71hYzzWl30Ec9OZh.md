@@ -2,7 +2,9 @@
 category: 技术
 title: 如何免费科学上网
 date: 2018-01-16 14:03:15
-tags: [" 工具"]
+tags: ["工具"]
+banner: https://ws4.sinaimg.cn/large/006tNc79gy1fni9qq209rj30cs07o0u1.jpg
+description: 如何使用免费资源实现科学上网？首先要有一台可以访问墙外资源的服务器，然后在服务器上搭建`shadowsocks`即可。
 ---
 
 ![](https://ws4.sinaimg.cn/large/006tNc79gy1fni9qq209rj30cs07o0u1.jpg)

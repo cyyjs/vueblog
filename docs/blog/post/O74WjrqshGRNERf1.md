@@ -3,6 +3,7 @@ category: 技术
 title: MongoDB开启权限验证的方法
 date: 2017-10-13 11:40:10
 tags: ["mongodb"]
+banner: https://ws2.sinaimg.cn/large/006tKfTcly1fkggtqchopj30e80e8t8z.jpg
 ---
 
 ![](https://ws2.sinaimg.cn/large/006tKfTcly1fkggtqchopj30e80e8t8z.jpg)
@@ -27,6 +28,8 @@ db.createUser({
     }]
 })
 ```
+
+<!--more-->
 
 db 是指定数据库的名字，admin 是管理数据库。
 

@@ -136,7 +136,7 @@ function find(page, items, offset) {
 
 .page-nav.content {
     padding-top: 1rem !important;
-    padding-bottom: 0 !important;
+    padding-bottom: 5px !important;
 
     .inner {
         min-height: 2rem;

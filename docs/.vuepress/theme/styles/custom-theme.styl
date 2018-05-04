@@ -1,6 +1,7 @@
 @require './config';
 
 body {
+    background: #f6f6f6;
     user-select: none;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Chrome/Safari/Opera */
@@ -23,28 +24,106 @@ pre {
 .page-head {
     max-width: 740px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 2rem 2.5rem;
+    margin-top: 4.6rem;
+    margin-bottom: 20px;
+    background: #fff;
 
     h1 {
-        padding-top: 4.6rem;
         color: $textColor;
+        margin-top: 0;
     }
 
-    .tag {
-        background: $accentColor;
-        color: #fff;
-        padding: 5px 10px;
-        border-radius: 5px;
-        margin-right: 10px;
+    .page-head-footer {
+        text-align: right;
+
+        .tags {
+            float: left;
+        }
+    }
+}
+
+.page {
+    .content {
+        background: #fff;
+
+        &:not(.custom) > *:first-child {
+            margin-top: 0;
+        }
     }
 
-    .time {
-        color: #999;
-        margin-left: 10px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        padding: 0 5px;
+    .list-content {
+        max-width: 740px;
+        margin: 0 auto;
+        padding: 2rem 2.5rem;
     }
+
+    .item-card {
+        padding: 16px 20px;
+        background: #fff;
+        border-radius: 3px;
+        box-shadow: 0 1px 2px rgba(151, 151, 151, 0.58);
+        margin-bottom: 30px;
+
+        &:hover {
+            box-shadow: 1px 2px 2px rgba(151, 151, 151, 0.6);
+        }
+
+        h2 {
+            margin-top: 0;
+            padding-bottom: 1rem;
+        }
+
+        .item-body {
+            line-height: 1.7rem;
+            padding: 0 0 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .item-img {
+                width: 6rem;
+                height: 5rem;
+                flex-shrink: 0;
+                display: inline-block;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-left: 10px;
+            }
+        }
+
+        &::after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+
+        .card-footer {
+            text-align: right;
+
+            .tags {
+                float: left;
+            }
+        }
+    }
+}
+
+.tags {
+    background: $accentColor;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.time {
+    white-space: nowrap;
+    color: #999;
+    margin-left: 10px;
+    // border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0 5px;
+    line-height: 28px;
 }
 
 .back-top {

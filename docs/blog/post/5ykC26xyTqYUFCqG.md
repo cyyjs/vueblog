@@ -1,4 +1,9 @@
-# 搭建 FTP 服务器
+---
+category: 技术
+title: 搭建 FTP 服务器
+date: 2017-12-18 10:39:35
+tags: ["FTP"]
+---
 
 ## 安装并启动 FTP 服务
 
