@@ -19,7 +19,7 @@ module.exports = {
     title: 'Cyy', // 设置网站标题
     description: '哟，你的bug里有段代码~',
     dest: './dist', // 设置输出目录
-    base: '/vueblog/', // 设置站点根路径
+    base: '/', // 设置站点根路径
     repo: 'https://github.com/cyyjs/vueblog', // 添加 github 链接
     head: [['link', { rel: 'icon', href: `/img/favicon.ico` }]],
     // serviceWorker: true,
