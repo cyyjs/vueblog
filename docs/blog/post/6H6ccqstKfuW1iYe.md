@@ -63,7 +63,7 @@ banner: https://ws3.sinaimg.cn/large/006tNc79ly1fmkp7lm117j30gg0ou769.jpg
 
 6.修改`android/app/src/main/java/com/APPNAMES/MainActivity.java`文件：
 
-```xml
+```java
 import com.facebook.react.ReactActivity;
 import android.graphics.Color;
 import android.os.Bundle;
