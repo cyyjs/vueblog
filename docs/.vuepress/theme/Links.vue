@@ -1,6 +1,15 @@
 <template>
   <div class="page">
       <div class="page-content">
+        <div class="page-right">
+            <div class="tags-list">
+                <div class="title">标签列表</div>
+                <ul>
+                    <li :class="['tags', tag == '' ? 'active' : '']" @click="changeTag('')">全部</li>
+                    <li :class="['tags', tag == t ? 'active' : '']" @click="changeTag(t)" v-for="t in tags" :key="t">{{t}}</li>
+                </ul>
+            </div>
+        </div>
         <div class="list-content">
             <div class="item-card" v-for="p in page">
                 <h2><router-link :to="p.path" >{{ p.title }}</router-link></h2>
@@ -14,15 +23,6 @@
                 </div>
             </div>
             <pagination :pageNo="pageNo" :total="filterPageList.length" @change="changePage"></pagination>
-        </div>
-        <div class="page-right">
-            <div class="tags-list">
-                <div class="title">标签列表</div>
-                <ul>
-                    <li class="tags" @click="changeTag('')">全部</li>
-                    <li class="tags" @click="changeTag(t)" v-for="t in tags" :key="t">{{t}}</li>
-                </ul>
-            </div>
         </div>
       </div>
       <back-top></back-top>
