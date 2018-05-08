@@ -10,7 +10,9 @@
   </div>
 </template>
 <script>
+import mixin from './lib/mixin'
 export default {
+    mixins: [mixin],
     data() {
         return {
             scrollTop: 0,
@@ -18,10 +20,6 @@ export default {
         }
     },
     methods: {
-        toTop() {
-            document.documentElement.scrollTop = 0
-            document.body.scrollTop = 0
-        },
         onScroll() {
             this.scrollTop =
                 document.documentElement.scrollTop || document.body.scrollTop

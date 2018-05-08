@@ -52,21 +52,58 @@ pre {
         }
     }
 
-    .list-content {
-        max-width: 740px;
+    .page-content {
+        max-width: 960px;
         margin: 0 auto;
         padding: 2rem 2.5rem;
+        display: flex;
+        margin-top: 3.6rem;
+    }
+
+    .page-right {
+        width: 240px;
+        margin-left: 20px;
+        flex-shrink: 0;
+
+        &>div {
+            background-color: #fff;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+            &:hover {
+                box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
+            }
+        }
+
+        .title {
+            border-bottom: 1px solid #eee;
+            padding: 10px;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .list-content {
+        flex-grow: 1;
     }
 
     .item-card {
         padding: 16px 20px;
         background: #fff;
         border-radius: 3px;
-        box-shadow: 0 1px 2px rgba(151, 151, 151, 0.58);
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
         margin-bottom: 30px;
 
         &:hover {
-            box-shadow: 1px 2px 2px rgba(151, 151, 151, 0.6);
+            box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
         }
 
         h2 {
@@ -110,10 +147,17 @@ pre {
 
 .tags {
     background: $accentColor;
-    color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
     margin-right: 10px;
+    cursor: pointer;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.8);
+
+    &:hover {
+        color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.26);
+    }
 }
 
 .time {
@@ -198,5 +242,18 @@ pre {
         border-bottom: 7px solid transparent;
         border-left: 8px solid #444;
         top: 30%;
+    }
+}
+
+.home .hero img {
+    max-height: 180px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
     }
 }

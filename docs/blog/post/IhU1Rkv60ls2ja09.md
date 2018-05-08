@@ -4,7 +4,7 @@ title: Pow 快速创建静态网页服务器
 date: 2017-10-20 15:36:23
 tags: [" 工具"]
 banner: https://ws4.sinaimg.cn/large/006tNc79ly1fkoqm5g827j30be08cmy6.jpg
-discription: Pow 需要 Mac OS X 10.9 或更高版本。要安装或升级 Pow，只需打开终端并运行以下命令
+description: Pow 需要 Mac OS X 10.9 或更高版本。要安装或升级 Pow，只需打开终端并运行以下命令
 ---
 
 ![](https://ws4.sinaimg.cn/large/006tNc79ly1fkoqm5g827j30be08cmy6.jpg)

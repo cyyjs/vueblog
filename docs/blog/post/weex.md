@@ -10,12 +10,12 @@ banner: https://ws3.sinaimg.cn/large/006tNc79ly1fkk7wozlbqj31jq11aalh.jpg
 
 1、安装 [Android Studio](https://developer.android.com/studio/install.html)或者 [Android SDK](https://developer.android.com/studio/releases/sdk-tools.html)
 
-<!--more-->
-
 2、 安装 `Android SDK Build-Tools 23.0.2`版本
 
 ![](https://ws4.sinaimg.cn/large/006tNc79ly1fkk7rwkl1vj30wu0owgpy.jpg)
 打开`Android Studio`>`Tools`>`Android`>`SDK Manager`，选择`SDK Tools`选项， 选择`Show Package Details`; 找到 `23.0.2`勾选并安装。
+
+<!-- more -->
 
 ![](https://ws3.sinaimg.cn/large/006tNc79ly1fkk7wozlbqj31jq11aalh.jpg)
 

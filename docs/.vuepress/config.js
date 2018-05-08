@@ -31,27 +31,7 @@ module.exports = {
             { text: 'Home', link: '/' },
             {
                 text: 'Blog',
-                link: '/blog/',
-                items: [
-                    {
-                        text: '列表',
-                        link: '/blog/links'
-                    },
-                    {
-                        text: '标签',
-                        link: '/blog/tags'
-                    },
-                    {
-                        text: '归档',
-                        link: '/blog/archives'
-                    }
-                ]
-                // blogs.map(b => {
-                //     return {
-                //         text: b,
-                //         link: `/blog/${b}/${getFileList(`blog/${b}`, 1)[0]}`
-                //     }
-                // })
+                link: '/blog/'
             },
             {
                 text: 'Live',
@@ -76,8 +56,10 @@ module.exports = {
                 link: 'https://github.com/cyyjs'
             }
         ],
-        sidebar: blogs.map(b => {
-            return `blog/post/${b}`
-        })
+        sidebar: {
+            '/blog/': blogs.map(b => {
+                return `post/${b}`
+            })
+        }
     }
 }

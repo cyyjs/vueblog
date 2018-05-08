@@ -1,8 +1,4 @@
 ---
 sidebar: false
-next: false
+link: true
 ---
-
-# blog
-
-[Weex 项目 Android 部署](./0ySGeMATlDSbikLM.html)

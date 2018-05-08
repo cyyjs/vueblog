@@ -6,8 +6,9 @@ tags: [nodejs, 自动化]
 banner: https://ws4.sinaimg.cn/large/006tKfTcly1fgrtvlh5b7j307g08iglq.jpg
 ---
 
-[nodemon](https://www.npmjs.com/package/nodemon)将监视启动 nodemon 的目录中的文件，如果任何文件更改，nodemon 将自动重新启动 node 应用程序。
 ![](https://ws4.sinaimg.cn/large/006tKfTcly1fgrtvlh5b7j307g08iglq.jpg)
+
+[nodemon](https://www.npmjs.com/package/nodemon)将监视启动 nodemon 的目录中的文件，如果任何文件更改，nodemon 将自动重新启动 node 应用程序。
 
 <!-- more -->
 

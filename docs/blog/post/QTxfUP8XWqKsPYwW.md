@@ -7,6 +7,8 @@ tags: ["nodejs"]
 
 文件数据过滤，并将过滤后的数据存入新的文件。
 
+<!-- more -->
+
 ```js
 const fs = require('fs')
 const readline = require('readline')

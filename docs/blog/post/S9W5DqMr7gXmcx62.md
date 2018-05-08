@@ -23,6 +23,8 @@ docker images
 docker pull node:8.10.0
 ```
 
+<!-- more -->
+
 #### 3、搜索镜像
 
 ```shell

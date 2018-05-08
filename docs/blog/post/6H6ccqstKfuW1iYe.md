@@ -21,7 +21,7 @@ banner: https://ws3.sinaimg.cn/large/006tNc79ly1fmkp7lm117j30gg0ou769.jpg
 </resources>
 ```
 
-<!--more-->
+<!-- more -->
 
 ## 设置启动页
 

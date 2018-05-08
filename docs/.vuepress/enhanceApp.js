@@ -1,4 +1,4 @@
-import { dateFormat } from './theme/util'
+import { dateFormat, formatContent } from './theme/util'
 export default ({
     Vue, // VuePress 正在使用的 Vue 构造函数
     options, // 附加到根实例的一些选项
@@ -6,6 +6,7 @@ export default ({
     siteData // 站点元数据
 }) => {
     // ...做一些其他的应用级别的优化
+    // console.log(siteData)
     let pages = siteData.pages
         .sort((a, b) => {
             let at =
@@ -29,8 +30,9 @@ export default ({
             p.frontmatter.meta = p.frontmatter.meta || [
                 {
                     name: 'description',
-                    content:
-                        p.frontmatter.description || p.frontmatter.excerpt || ''
+                    content: formatContent(
+                        p.frontmatter.description || p.excerpt || ''
+                    )
                 },
                 {
                     name: 'keywords',

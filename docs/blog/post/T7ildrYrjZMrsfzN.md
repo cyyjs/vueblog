@@ -12,3 +12,5 @@ TypeError: The header content contains invalid characters
 ```
 
 出现此原因发现是在执行`ctx.redirect` 的时候出现的，经检查发现为`redirect`的`url`中包含了中文，修改为`redirect(encodeURI(url))`即可。
+
+<!-- more -->

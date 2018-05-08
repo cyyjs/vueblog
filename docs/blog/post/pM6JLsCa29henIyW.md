@@ -9,7 +9,7 @@ banner: https://ws2.sinaimg.cn/large/006tNbRwgy1fgagteiy5ej31ji120dmi.jpg
 > 使用第三方 Git 仓库，实现代码的自动部署
 > GitHub 提供了 Webhooks 的功能，我们通过相应的配置就可以实现在代码提交到 GitHub 后自动部署我们的项目
 
-<!--more-->
+<!-- more -->
 
 ### 在 GitHub 添加部署服务器的 ssh key
 

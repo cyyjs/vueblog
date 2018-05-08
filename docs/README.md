@@ -1,5 +1,10 @@
 ---
 home: true
+heroImage: /img/head.jpeg
+heroText: false
+tagline: false
+actionText: About Me →
+actionLink: /about
 features:
 - title: Blog
   details: 在日常中学习和总结的一些经验。

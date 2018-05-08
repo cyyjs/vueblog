@@ -4,6 +4,7 @@ title: MongoDB开启权限验证的方法
 date: 2017-10-13 11:40:10
 tags: ["mongodb"]
 banner: https://ws2.sinaimg.cn/large/006tKfTcly1fkggtqchopj30e80e8t8z.jpg
+description: MongoDB角色配置及用户权限的创建方法
 ---
 
 ![](https://ws2.sinaimg.cn/large/006tKfTcly1fkggtqchopj30e80e8t8z.jpg)
@@ -15,21 +16,21 @@ banner: https://ws2.sinaimg.cn/large/006tKfTcly1fkggtqchopj30e80e8t8z.jpg
 *   `readWrite` 有读写权限
 *   `read` 有读权限
 
+<!-- more -->
+
 ## 创建一个超级用户
 
 ```js
 use admin
 db.createUser({
     user: "root",
-    pwd: "cyy_mongo",
+    pwd: "pwd",
     roles: [{
       "role" : "root",
       "db" : "admin"
     }]
 })
 ```
-
-<!--more-->
 
 db 是指定数据库的名字，admin 是管理数据库。
 

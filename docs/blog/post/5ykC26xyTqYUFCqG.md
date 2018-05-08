@@ -23,13 +23,13 @@ sudo apt-get install vsftpd -y
 sudo netstat -nltp | grep 21
 ```
 
+<!-- more -->
+
 如果没有启动，可以手动开启 `VSFTPD` 服务：
 
 ```shell
 sudo systemctl start vsftpd.service
 ```
-
-<!-- more -->
 
 ## 配置用户访问目录
 

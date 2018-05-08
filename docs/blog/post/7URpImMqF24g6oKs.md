@@ -27,10 +27,10 @@ if (cluster.isMaster) {
 }
 ```
 
+<!-- more -->
+
 我们可以通过`cluster.isMaster`来执行一些任务;
 [pm2](http://pm2.keymetrics.io/)是一个很好的`nodejs` 管理工具，我们可以通过配置来启动我们的`nodejs`服务，他的代码和我们平常写的一样。
-
-<!-- more -->
 
 例如：
 

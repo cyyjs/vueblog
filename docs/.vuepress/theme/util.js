@@ -221,3 +221,7 @@ export function dateFormat(date) {
         return ''
     }
 }
+
+export function formatContent(data = '') {
+    return data.replace(/>|(#+)|(\[[^\]]+\]\([^\)]+\))|(!\[\]\([^\(]+)/g, '')
+}

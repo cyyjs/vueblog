@@ -18,6 +18,8 @@ Xcode、Java、Android SDK、Android Studio、Nodejs、watchman
 npm install -g react-native-cli
 ```
 
+<!-- more -->
+
 ## 代码环境
 
 Visual Studio Code

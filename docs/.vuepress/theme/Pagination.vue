@@ -1,5 +1,5 @@
 <template>
-  <div class="pagination">
+  <div class="pagination" v-show="pageCount > 1">
       <ul>
           <li @click="prev" :class="{disabled: pageNo === 1}">上一页</li>
           <li @click="$emit('change', i)" v-for="i in nums" :class="{active: pageNo === i}">{{i}}</li>

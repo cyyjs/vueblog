@@ -6,7 +6,7 @@ tags:
     - log4js
     - pm2
 banner: https://ws1.sinaimg.cn/large/006tNc79gy1flgieyz2y1j313s0aedgr.jpg
-discription: 项目中用`log4js`可以正常写入日志到文件中，后来使用`pm2`启动后，发现文件不能写入到文件了。网上查了很久，并没有找到原因，所以就想到了查看源码的方法，来查找到底是哪里出了问题
+description: 项目中用`log4js`可以正常写入日志到文件中，后来使用`pm2`启动后，发现文件不能写入到文件了。网上查了很久，并没有找到原因，所以就想到了查看源码的方法，来查找到底是哪里出了问题
 ---
 
 ![](https://ws1.sinaimg.cn/large/006tNc79gy1flgieyz2y1j313s0aedgr.jpg)
