@@ -115,7 +115,7 @@ server {
 
 启动两个项目实例，分别监听 8013 和 8014 端口；然后启动 nginx
 
-```shell
+```bash
 sudo nginx
 ```
 

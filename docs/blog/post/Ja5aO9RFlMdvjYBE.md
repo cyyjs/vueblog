@@ -13,7 +13,7 @@ tags: ssh
 
 ssh 无密码登录要使用公钥与私钥。linux 下可以用用`ssh-keygen`生成公钥/私钥对。
 
-```shell
+```bash
 ssh-keygen -t rsa -C "xxx@email.com"
 ```
 
@@ -21,7 +21,7 @@ ssh-keygen -t rsa -C "xxx@email.com"
 
 然后可以通过以下命令查看到生成的公钥：
 
-```shell
+```bash
 cat ~/.ssh/id_rsa.pub
 ```
 

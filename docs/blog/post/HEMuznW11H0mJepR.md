@@ -14,7 +14,7 @@ Xcode、Java、Android SDK、Android Studio、Nodejs、watchman
 
 ## 安装 React Native CLI
 
-```shell
+```bash
 npm install -g react-native-cli
 ```
 
@@ -29,7 +29,7 @@ Visual Studio Code
 
 ## 初始化项目
 
-```shell
+```bash
 react-native init app
 cd app
 npm install
@@ -37,7 +37,7 @@ npm install
 
 ##运行项目将手机用数据线链接或打开手机模拟器安卓手机输入`adb devices`，会列出设备在项目目录下输入
 
-```shell
+```bash
 npm run android
 ```
 
@@ -48,7 +48,7 @@ npm run android
 如果是真机，可以摇晃手机，打开菜单，选择`Debug JS Remotely`;
 会在浏览器中打开`http://localhost:19001/debugger-ui/`页面。如果是模拟器启动，可以输入以下命令触发：
 
-```shell
+```bash
 adb shell input keyevent 82
 ```
 

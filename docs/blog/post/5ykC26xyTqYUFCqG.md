@@ -11,7 +11,7 @@ tags: ["FTP"]
 
 使用 `apt-get` 安装 `vsftpd`
 
-```shell
+```bash
 sudo apt-get install vsftpd -y
 ```
 
@@ -19,7 +19,7 @@ sudo apt-get install vsftpd -y
 
 安装完成后 VSFTPD 会自动启动，通过 `netstat` 命令可以看到系统已经监听了 21 端口
 
-```shell
+```bash
 sudo netstat -nltp | grep 21
 ```
 
@@ -27,7 +27,7 @@ sudo netstat -nltp | grep 21
 
 如果没有启动，可以手动开启 `VSFTPD` 服务：
 
-```shell
+```bash
 sudo systemctl start vsftpd.service
 ```
 
@@ -35,7 +35,7 @@ sudo systemctl start vsftpd.service
 
 ### 新建用户主目录
 
-```shell
+```bash
 sudo mkdir /home/uftp
 ```
 
@@ -45,25 +45,25 @@ sudo mkdir /home/uftp
 
 ### 创建登录欢迎文件
 
-```shell
+```bash
 sudo touch /home/uftp/welcome.txt
 ```
 
 ###新建用户 `uftp` 并设置密码创建一个用户 `uftp`
 
-```shell
+```bash
 sudo useradd -d /home/uftp -s /bin/bash uftp
 ```
 
 为用户 `uftp` 设置密码
 
-```shell
+```bash
 sudo passwd uftp
 ```
 
 删除掉 `pam.d` 中 `vsftpd`，因为该配置文件会导致使用用户名登录 `ftp` 失败：
 
-```shell
+```bash
 sudo rm /etc/pam.d/vsftpd
 ```
 
@@ -71,13 +71,13 @@ sudo rm /etc/pam.d/vsftpd
 
 限制用户 uftp 只能通过 FTP 访问服务器，而不能直接登录服务器：
 
-```shell
+```bash
 sudo usermod -s /sbin/nologin uftp
 ```
 
 修改 `vsftpd` 配置
 
-```shell
+```bash
 sudo chmod a+w /etc/vsftpd.conf
 ```
 
@@ -106,14 +106,14 @@ utf8_filesystem=YES
 
 ### 新建文件 `/etc/vsftpd.user_list`，用于存放允许访问 ftp 的用户：
 
-```shell
+```bash
 sudo touch /etc/vsftpd.user_list
 sudo chmod a+w /etc/vsftpd.user_list
 ```
 
 修改 `/etc/vsftpd.user_list` ，加入刚刚创建的用户：
 
-```shell
+```bash
 vsftpd.user_list
 uftp
 ```
@@ -122,19 +122,19 @@ uftp
 
 ### 设置主目录访问权限（只读）
 
-```shell
+```bash
 sudo chmod a-w /home/uftp
 ```
 
 ### 新建公共目录，并设置权限（读写）
 
-```shell
+```bash
 sudo mkdir /home/uftp/public && sudo chmod 777 -R /home/uftp/public
 ```
 
 ### 重启 vsftpd 服务：
 
-```shell
+```bash
 sudo systemctl restart vsftpd.service
 ```
 
@@ -151,6 +151,6 @@ WinSCP - Windows 下的 FTP 和 SFTP 连接客户端下载和安装 FTP 客户�
 ###通过 Windows 资源管理器访问
 Windows 用户可以复制下面的链接到资源管理器的地址栏访问：
 
-```shell
+```bash
 ftp://uftp:你的密码@111.111.111.11
 ```

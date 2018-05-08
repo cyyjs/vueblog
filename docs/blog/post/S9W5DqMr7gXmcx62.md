@@ -19,7 +19,7 @@ docker images
 
 #### 2、拉取镜像
 
-```shell
+```bash
 docker pull node:8.10.0
 ```
 
@@ -27,13 +27,13 @@ docker pull node:8.10.0
 
 #### 3、搜索镜像
 
-```shell
+```bash
 docker search node
 ```
 
 #### 4、导出导入镜像
 
-```shell
+```bash
 docker save node > node.tar
 docker load < node.tar
 ```
@@ -42,7 +42,7 @@ docker load < node.tar
 
 #### 1、创建并启动容器
 
-```shell
+```bash
 docker run -i -t node /bin/bash
 ```
 
@@ -51,55 +51,55 @@ docker run -i -t node /bin/bash
 
 #### 2、列出容器
 
-```shell
+```bash
 docker ps
 ```
 
 #### 3、进入运行中的容器
 
-```shell
+```bash
 docker attach 容器ID
 ```
 
 #### 4、执行命令
 
-```shell
+```bash
 docker exec -i -t 容器ID ls -l
 ```
 
 #### 5、停止容器
 
-```shell
+```bash
 docker stop 容器ID
 ```
 
 #### 6、终止容器
 
-```shell
+```bash
 docker kill 容器ID
 ```
 
 #### 7、启动容器
 
-```shell
+```bash
 docker start 容器ID
 ```
 
 #### 8、重启容器
 
-```shell
+```bash
 docker restart 容器ID
 ```
 
 #### 9、删除容器
 
-```shell
+```bash
 docker rm 容器ID
 ```
 
 #### 10、导入导出容器
 
-```shell
+```bash
 docker export 容器ID > node.tar
 docker import node.tar cyy/node:latest
 ```

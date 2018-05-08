@@ -46,7 +46,7 @@ banner: https://ws1.sinaimg.cn/large/006tNc79ly1fke3s9cr5qj30c00aa755.jpg
 *   autojump (brew install autojump)
     如果 link 失败可执行
 
-```shell
+```bash
 sudo chown -R $(whoami) /usr/local/share/
 ```
 
@@ -55,7 +55,7 @@ sudo chown -R $(whoami) /usr/local/share/
 *   [Git](https://git-scm.com/)
     生成 KEY：
 
-```shell
+```bash
 git config --global user.name “xx”
 git config --global user.email “x@gmail.com"
 ssh-keygen -t rsa -C “xx@gmail.com”
@@ -68,7 +68,7 @@ ssh-keygen -t rsa -C “xx@gmail.com”
 *   [yarn](https://yarnpkg.com/zh-Hans/) （node 包管理）
 *   [cnpm](https://npm.taobao.org/) 淘宝 NPM 镜像
 
-```shell
+```bash
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 
@@ -85,7 +85,7 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 *   [Scss](https://www.sass.hk/) 前端 CSS 扩展语言
 *   vim 设置
 
-```shell
+```bash
 vim ~/.zshrc
 syntax on
 set nu # 显示行号

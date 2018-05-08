@@ -15,7 +15,7 @@ description: Pow 需要 Mac OS X 10.9 或更高版本。要安装或升级 Pow�
 
 Pow 需要 Mac OS X 10.9 或更高版本。要安装或升级 Pow，只需打开终端并运行以下命令
 
-```shell
+```bash
 curl get.pow.cx | sh
 ```
 

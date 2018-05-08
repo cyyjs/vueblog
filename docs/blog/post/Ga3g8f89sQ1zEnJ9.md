@@ -14,25 +14,25 @@ banner: https://ws4.sinaimg.cn/large/006tKfTcly1fgrtvlh5b7j307g08iglq.jpg
 
 ### 安装
 
-```shell
+```bash
 npm install -g nodemon
 ```
 
 ### 用法
 
-```shell
+```bash
 nodemon [your node app]
 ```
 
 使用 nodemon 很简单，如果我的应用程序接受主机和端口作为参数，可以这样使用:
 
-```shell
+```bash
 nodemon ./server.js localhost 8080
 ```
 
 nodemon 还支持运行和监视 coffee 脚本应用程序：
 
-```shell
+```bash
 nodemon server.coffee
 ```
 

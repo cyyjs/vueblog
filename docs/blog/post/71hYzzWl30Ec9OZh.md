@@ -29,7 +29,7 @@ description: 如何使用免费资源实现科学上网？首先要有一台可�
 
 打开[Shadowsocks servers](https://shadowsocks.org/en/download/servers.html),根据提示安装。
 
-```shell
+```bash
 apt-get install python-pip
 pip install shadowsocks
 ```
@@ -54,7 +54,7 @@ pip install shadowsocks
 
 ### 启动及停止
 
-```shell
+```bash
 sudo ssserver -c ./conf.json -d start
 ```
 
@@ -62,7 +62,7 @@ sudo ssserver -c ./conf.json -d start
 
 ### 查看日志
 
-```shell
+```bash
 sudo less /var/log/shadowsocks.log
 ```
 
