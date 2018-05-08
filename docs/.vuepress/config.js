@@ -14,6 +14,7 @@ function getFileList(name, isMd) {
 }
 
 module.exports = {
+    ga: 'UA-98939871-3',
     port: 8004,
     title: 'Cyy', // 设置网站标题
     description: '哟，你的bug里有段代码~',
