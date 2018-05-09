@@ -26,12 +26,16 @@ banner: https://ws3.sinaimg.cn/large/006tNc79ly1fmkp7lm117j30gg0ou769.jpg
 ## 设置启动页
 
 使用[rn-splash-screen](https://github.com/mehcode/rn-splash-screen)组件：使用方法：
+
 1、安装 `npm i rn-splash-screen --save`
+
 2、连接 `react-native link rn-splash-screen`
+
 3、在 res 文件中新建`drawable`文件夹，放置`splash.png`图片
+
 4、修改`android/app/src/main/res/values/styles.xml`文件，添加一行：
 
-````xml
+```xml
 <resources>
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -39,7 +43,10 @@ banner: https://ws3.sinaimg.cn/large/006tNc79ly1fmkp7lm117j30gg0ou769.jpg
         <!-- Customize your theme here. -->
     </style>
 </resources>
+```
+
 5.修改`android/app/src/main/AndroidManifest.xml`文件：
+
 ```xml
 <application
       android:name=".MainApplication"
@@ -59,7 +66,7 @@ banner: https://ws3.sinaimg.cn/large/006tNc79ly1fmkp7lm117j30gg0ou769.jpg
       </activity>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
     </application>
-````
+```
 
 6.修改`android/app/src/main/java/com/APPNAMES/MainActivity.java`文件：
 
