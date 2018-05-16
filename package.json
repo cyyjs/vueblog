@@ -15,6 +15,7 @@
     },
     "readmeFilename": "README.md",
     "devDependencies": {
+        "feed": "^1.1.1",
         "node-sass": "^4.9.0",
         "sass-loader": "^7.0.1"
     }

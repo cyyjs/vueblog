@@ -286,6 +286,12 @@ fast-json-stable-stringify@^2.0.0:
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/fast-json-stable-stringify/download/fast-json-stable-stringify-2.0.0.tgz#d5142c0caee6b1189f87d3a76111064f86c8bbf2"
 
+feed@^1.1.1:
+  version "1.1.1"
+  resolved "http://registry.npm.taobao.org/feed/download/feed-1.1.1.tgz#914897517e94fa327cc6f73bb585a47c4a9ed321"
+  dependencies:
+    xml "^1.0.1"
+
 find-up@^1.0.0:
   version "1.1.2"
   resolved "http://registry.npm.taobao.org/find-up/download/find-up-1.1.2.tgz#6b2e9822b1a2ce0a60ab64d610eccad53cb24d0f"
@@ -1276,6 +1282,10 @@ wrap-ansi@^2.0.0:
 wrappy@1:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/wrappy/download/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
+
+xml@^1.0.1:
+  version "1.0.1"
+  resolved "http://registry.npm.taobao.org/xml/download/xml-1.0.1.tgz#78ba72020029c5bc87b8a81a3cfcd74b4a2fc1e5"
 
 xtend@^4.0.0:
   version "4.0.1"

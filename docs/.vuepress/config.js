@@ -1,6 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const blogs = getFileList('blog/post', true)
+
 function getFileList(name, isMd) {
     let folders = fs.readdirSync(path.join(__dirname, '../' + name))
     if (isMd) {
