@@ -48,7 +48,7 @@ export default {
                 return this.oDataMap
             } else {
                 for(let k in this.oDataMap) {
-                    let list = this.oDataMap[k].filter(i => i.title.includes(this.favoriteInput))
+                    let list = this.oDataMap[k].filter(i => i.title.toLocaleUpperCase().includes(this.favoriteInput.toLocaleUpperCase()))
                     if (list.length) {
                         map[k] = list
                     }
