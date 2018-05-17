@@ -11,8 +11,8 @@
             </div>
         </div>
         <div class="list-content">
-            <div class="item-card" v-for="p in page">
-                <h2><router-link :to="p.path" >{{ p.title }}</router-link></h2>
+            <div class="item-card" v-for="p in page" @click="$router.push(p.path)">
+                <h2>{{ p.title }}</h2>
                 <div class="item-body">
                     <div class="item-content">{{formatContent(p.frontmatter.description || p.excerpt)}}</div>
                     <div class="item-img" v-if="p.frontmatter.banner" :style="{backgroundImage:'url('+p.frontmatter.banner+')'}"> </div>
