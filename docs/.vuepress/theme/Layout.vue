@@ -3,14 +3,14 @@
     :class="pageClasses"
     @touchstart="onTouchStart"
     @touchend="onTouchEnd">
-    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
+    <Navbar v-if="shouldShowNavbar" @favorite-input="v=>favoriteInput=v" @toggle-sidebar="toggleSidebar"/>
     <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
     <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">
       <slot name="sidebar-top" slot="top"/>
       <slot name="sidebar-bottom" slot="bottom"/>
     </Sidebar>
     <div class="custom-layout" v-if="$page.frontmatter.layout">
-      <component :is="$page.frontmatter.layout"/>
+      <component :is="$page.frontmatter.layout" :favoriteInput="favoriteInput"/>
     </div>
     <Home v-else-if="$page.frontmatter.home"/>
     <Links v-else-if="$page.frontmatter.link"/>
@@ -36,7 +36,8 @@ export default {
     components: { Home, Page, Sidebar, Navbar, Links },
     data() {
         return {
-            isSidebarOpen: false
+            isSidebarOpen: false,
+            favoriteInput: ''
         }
     },
 

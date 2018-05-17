@@ -36,6 +36,10 @@ module.exports = {
                 link: '/blog/'
             },
             {
+                text: 'Favorite',
+                link: '/favorite'
+            },
+            {
                 text: 'Live',
                 link: `/live/${getFileList(`live`, 1)[0]}`
             },

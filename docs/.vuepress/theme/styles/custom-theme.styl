@@ -110,6 +110,7 @@ pre {
     }
 
     .item-card {
+        cursor: pointer;
         padding: 16px 20px;
         background: #fff;
         border-radius: 3px;
@@ -273,5 +274,78 @@ pre {
     &:hover {
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
+    }
+}
+
+.favorite-search {
+    cursor: pointer;
+    width: 10rem;
+    color: lighten($textColor, 25%);
+    display: inline-block;
+    border: 1px solid darken($borderColor, 10%);
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    padding: 0 0.5rem 0 2rem;
+    outline: none;
+    transition: all 0.2s ease;
+    background: #fff url('../search.svg') 0.6rem 0.5rem no-repeat;
+    background-size: 1rem;
+
+    &:focus {
+        cursor: auto;
+        border-color: $accentColor;
+    }
+}
+
+.page .favorite {
+    flex-direction: row;
+    padding: 0;
+    margin-top: 0;
+    max-width: 960px;
+    margin: 0 auto;
+
+    .favorite-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item-card {
+        height: 100px;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        width: 273px;
+        margin-right: 10px;
+        font-size: 0.8rem;
+
+        h4 {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        .item-body {
+            padding: 0;
+            line-height: 1.2rem;
+
+            .item-img {
+                height: 95px;
+                width: 95px;
+            }
+
+            .item-content {
+                color: #666;
+
+                .tags {
+                    padding: 2px 5px;
+                }
+            }
+        }
+
+        .card-footer {
+            margin-top: 10px;
+        }
     }
 }
