@@ -318,6 +318,12 @@ pre {
             margin-right: 0;
         }
 
+        &:hover {
+            .item-img {
+                background-position: right;
+            }
+        }
+
         width: 273px;
         margin-right: 10px;
         font-size: 0.8rem;
@@ -336,6 +342,7 @@ pre {
             .item-img {
                 height: 95px;
                 width: 95px;
+                transition: background-position 1s ease-in-out;
             }
 
             .item-content {
