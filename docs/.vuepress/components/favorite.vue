@@ -9,7 +9,9 @@
                             <div class="item-body">
                                 <div class="item-content">
                                     <h4>{{p.title}}</h4>
-                                    {{p.description}}
+                                    <div style="height: 40px; overflow: hidden;">
+                                        {{p.description}}
+                                    </div>
                                     <div class="card-footer">
                                         <span class="tags" @click="changeTag(t)" :key="t" v-for="t in p.tags">{{t}}</span>
                                     </div>
@@ -57,7 +59,7 @@ export default {
     },
     methods: {
         fetchData() {
-            this.$http.get('http://api.alibt.top/favorite').then(({ data: { data } }) => {
+            this.$http.get(this.$site.themeConfig.apiUrl+ '/favorite').then(({ data: { data } }) => {
                 let list = data || []
                 let dataMap = {}
                 list.forEach(i => {

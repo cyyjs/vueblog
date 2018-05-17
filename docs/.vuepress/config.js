@@ -25,6 +25,7 @@ module.exports = {
     head: [['link', { rel: 'icon', href: `/img/favicon.ico` }]],
     // serviceWorker: true,
     themeConfig: {
+        apiUrl: 'http://api.alibt.top',
         logo: '/img/logo.png',
         notFindImg: '/img/404.svg',
         wxImg: '/img/qrcode.jpg',
