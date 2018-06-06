@@ -43,12 +43,16 @@ export default {
     },
     computed: {
         dataMap() {
-            let map = {};
+            let map = {}
             if (!this.favoriteInput.length) {
                 return this.oDataMap
             } else {
-                for(let k in this.oDataMap) {
-                    let list = this.oDataMap[k].filter(i => i.title.toLocaleUpperCase().includes(this.favoriteInput.toLocaleUpperCase()))
+                for (let k in this.oDataMap) {
+                    let list = this.oDataMap[k].filter(i =>
+                        i.title
+                            .toLocaleUpperCase()
+                            .includes(this.favoriteInput.toLocaleUpperCase())
+                    )
                     if (list.length) {
                         map[k] = list
                     }
@@ -59,16 +63,18 @@ export default {
     },
     methods: {
         fetchData() {
-            this.$http.get(this.$site.themeConfig.apiUrl+ '/favorite').then(({ data: { data } }) => {
-                let list = data || []
-                let dataMap = {}
-                list.forEach(i => {
-                    dataMap[i.category] = dataMap[i.category] || []
-                    i.updated = dateFormat(i.updated)
-                    dataMap[i.category].push(i)
+            this.$http
+                .get(this.$site.themeConfig.apiUrl + '/favorite')
+                .then(({ data: { data } }) => {
+                    let list = data || []
+                    let dataMap = {}
+                    list.forEach(i => {
+                        dataMap[i.category] = dataMap[i.category] || []
+                        i.updated = dateFormat(i.updated)
+                        dataMap[i.category].push(i)
+                    })
+                    this.oDataMap = dataMap
                 })
-                this.oDataMap = dataMap
-            })
         }
     },
     mounted() {

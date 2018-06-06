@@ -12,21 +12,25 @@ description: 原生Ajax请求以及数据返回进度条显示
 <div style="border:1px solid #ccc;height:20px;width:300px;padding: 2px;"><div id="progress" style="background:#3eaf7c;height:20px;width:0"></div></div>
 
 <script>
-    window.onload = function() {
-        var progressDiv = document.getElementById('progress')
-        var http = new XMLHttpRequest();
-        http.onprogress = function (event) {
-            if (event.lengthComputable) {
-                let progress = event.loaded / event.total * 300
-                progressDiv.style.width = progress + 'px';
+    export default {
+        mounted() {
+            window.onload = function() {
+                var progressDiv = document.getElementById('progress')
+                var http = new XMLHttpRequest();
+                http.onprogress = function (event) {
+                    if (event.lengthComputable) {
+                        let progress = event.loaded / event.total * 300
+                        progressDiv.style.width = progress + 'px';
+                    }
+                }
+                http.onload = function (event) {
+                    console.log(http.status);
+                    // console.log(http.responseText);
+                }
+                http.open('get', '/img/a.jpeg?a='+Math.random(), true);
+                http.send()
             }
         }
-        http.onload = function (event) {
-            console.log(http.status);
-            // console.log(http.responseText);
-        }
-        http.open('get', '/img/a.jpeg?a='+Math.random(), true);
-        http.send()
     }
 </script>
 
