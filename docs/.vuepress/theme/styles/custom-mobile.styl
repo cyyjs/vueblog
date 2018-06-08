@@ -12,10 +12,11 @@ $mobileSidebarWidth = $sidebarWidth * 0.82;
         .page-content {
             flex-direction: column;
             margin-top: 6.6rem;
+            padding: 0;
 
             .page-right {
                 position: fixed;
-                margin-left: -2.5rem;
+                margin-left: 0;
                 top: 3.5rem;
                 width: 100%;
 
@@ -30,6 +31,14 @@ $mobileSidebarWidth = $sidebarWidth * 0.82;
 
                 .title {
                     display: none;
+                }
+            }
+
+            .list-content {
+                margin-top: 10px;
+
+                .item-card {
+                    margin-bottom: 10px;
                 }
             }
         }
@@ -47,6 +56,11 @@ $mobileSidebarWidth = $sidebarWidth * 0.82;
                     margin-left: 10px;
                 }
             }
+        }
+
+        .back-top {
+            right: 20px;
+            bottom: 20px;
         }
     }
 
