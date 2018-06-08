@@ -15,7 +15,7 @@
                 <h2>{{ p.title }}</h2>
                 <div class="item-body">
                     <div class="item-content">{{formatContent(p.frontmatter.description || p.excerpt)}}</div>
-                    <div class="item-img" v-if="p.frontmatter && p.frontmatter.banner" :style="{backgroundImage:'url('+p.frontmatter && p.frontmatter.banner+')'}"> </div>
+                    <div class="item-img" v-if="p.frontmatter && p.frontmatter.banner" :style="{backgroundImage:'url('+p.frontmatter.banner+')'}"> </div>
                 </div>
                 <div class="card-footer">
                     <span class="tags" @click="changeTag(t)" :key="p.path+t" v-for="t in p.frontmatter.tags">{{t}}</span>
